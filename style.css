@@ -1,0 +1,148 @@
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+html {
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 300;
+  color: #1a1a1a;
+  background: #fafaf8;
+  line-height: 1.7;
+}
+
+/* Layout */
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+h2 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+}
+
+.quiet {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Links */
+a {
+  color: #1a1a1a;
+  text-decoration-color: #ccc;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+a:hover {
+  text-decoration-color: #1a1a1a;
+}
+
+/* Hero image */
+.hero {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+section ul li {
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Elsewhere links - inline */
+.links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.links li {
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.values {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+
+.contact a {
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.contact a:hover {
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  main {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    max-width: 240px;
+  }
+}
